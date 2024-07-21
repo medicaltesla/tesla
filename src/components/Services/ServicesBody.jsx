@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 import imageUrl from '@/public/images/dr.sir.jpg';
 import imageUrl1 from '@/public/images/dr.nitesh-jian.jpg';
-import imageUrl2 from '@/public/images/doctor.JPEG';
+import imageUrl2 from '@/public/images/doctor.jpeg';
 import imageUrl3 from '@/public/images/t1.jpg';
 
 const AboutBody = () => {

@@ -1,0 +1,82 @@
+/* Navbar.module.css */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Hide the sidebar off the screen */
+    width: 250px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.sidebar.open {
+    right: 0; /* Slide the sidebar into view */
+}
+
+.closeBtn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 15px 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-link {
+    color: #000; /* Default color */
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-link.active {
+    color: #ff0000; /* Active color */
+    font-weight: bold;
+}
+
+.custom-dropdown {
+    background-color: #1e81b0; /* Change this to your desired background color */
+    border: none; /* Remove border */
+    box-shadow: none;
+}
+
+
+/* Additional styling for dropdown items if needed */
+.custom-dropdown .dropdown-item {
+    color: #ffffff; /* Text color for dropdown items */
+}
+
+.custom-dropdown .dropdown-item:hover {
+    background-color: #628bd2; /* Background color on hover */
+}
+
+/* ... other styles ... */
+
+.mobile-sidebar-menu {
+    display: flex; /* Make items flex for horizontal layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  
+.mobile-sidebar-menu a {
+    color: white; /* Set text color to white */
+  }
+  
